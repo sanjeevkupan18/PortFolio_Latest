@@ -6,18 +6,28 @@ const Admin    = require('./models/Admin')
 
 const app = express()
 
+const normalizeOrigin = (origin) => origin.replace(/\/+$/, '')
+
 const allowedOrigins = (process.env.CLIENT_URLS || process.env.CLIENT_URL || '')
   .split(',')
   .map(origin => origin.trim())
   .filter(Boolean)
+  .map(normalizeOrigin)
 
 app.use(cors({
   origin(origin, callback) {
-    if (!origin || allowedOrigins.length === 0 || allowedOrigins.includes(origin)) {
+    if (!origin || allowedOrigins.length === 0) {
       callback(null, true)
       return
     }
 
+    const normalizedOrigin = normalizeOrigin(origin)
+    if (allowedOrigins.includes(normalizedOrigin)) {
+      callback(null, true)
+      return
+    }
+
+    console.error(`CORS blocked origin: ${origin}`)
     callback(new Error('Not allowed by CORS'))
   },
 }))
