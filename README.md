@@ -95,7 +95,6 @@ Set this env var in Vercel:
 
 ## Admin Notes
 
-- In non-production, the backend can auto-seed a local admin as `admin` / `admin123`.
 - In production, set `ADMIN_USERNAME` and `ADMIN_PASSWORD` so Render seeds your real admin account on startup.
 - The old login-time auto-creation flow was removed, which makes production deployment safer.
 
