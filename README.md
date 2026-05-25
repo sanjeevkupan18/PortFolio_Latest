@@ -2,6 +2,10 @@
 
 Full-stack portfolio with a Vite/React frontend in `client/` and an Express/MongoDB backend in `server/`.
 
+## Live Demo
+
+https://sanjucodingportfolio.vercel.app/
+
 ## Stack
 
 - Frontend: React 19, Vite, Tailwind CSS, Framer Motion
