@@ -30,7 +30,7 @@ const DATA = [
   { name: 'Statistics',  xp: 58, lv: 5, badge: '🥉', color: '#bf00ff' },
   { name: 'EDA',         xp: 70, lv: 7, badge: '🥇', color: '#00ff88' },
   { name: 'SQL',         xp: 74, lv: 7, badge: '🥇', color: '#4479a1' },
-  { name: 'Power BI',    xp: 68, lv: 6, badge: '🥈', color: '#f2c811' },
+  { name: 'Tableau ',    xp: 68, lv: 6, badge: '🥈', color: '#f2c811' },
 ]
 
 /* ── XP Card ────────────────────────────────────────────────── */

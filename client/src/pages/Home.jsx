@@ -9,6 +9,8 @@ import {
   SiPython, SiJavascript, SiGit, SiTailwindcss, SiPostman,
 } from 'react-icons/si'
 import { TbPower } from 'react-icons/tb'
+import { IoLogoTableau } from "react-icons/io5";
+
 
 const TECH = [
   { Icon: SiReact,       color: '#61DAFB', label: 'React'    },
@@ -20,7 +22,7 @@ const TECH = [
   { Icon: SiJavascript,  color: '#F7DF1E', label: 'JS'       },
   { Icon: SiGit,         color: '#F05032', label: 'Git'      },
   { Icon: SiTailwindcss, color: '#06B6D4', label: 'Tailwind' },
-  { Icon: TbPower,color: '#F2C811', label: 'Power BI' },
+  { Icon: IoLogoTableau, color: '#F2C811', label: 'Tableau' },
   { Icon: SiPostman,     color: '#FF6C37', label: 'Postman'  },
 ]
 
@@ -530,7 +532,7 @@ export default function Home() {
                   <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent,rgba(2,11,20,0.28))]" />
                   <img
                     src={heroImage}
-                    alt="Arjun Kumar portrait"
+                    alt="Sanjeev Kumar portrait"
                     className="relative z-10 mx-auto aspect-[4/5] w-full max-w-[360px] object-cover object-center"
                   />
                 </div>
